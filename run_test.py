@@ -5,6 +5,10 @@ class TestUser(unittest.TestCase):
     """
     Test class that defines test cases for the contact class behaviours
     """
+    def tearDown(self):
+        """
+        does clean up after each test case has run
+        """
 
     def setUp(self):
         """
@@ -29,6 +33,9 @@ class TestUser(unittest.TestCase):
         """
         self.new_user.save_account()#saving the new user
         self.assertEqual(len(User.user_createaccount),1)
+
+
+
         
 
 if __name__ == '__main__':
