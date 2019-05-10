@@ -1,5 +1,5 @@
-import unittest
-from user import User
+import unittest #importing the unittest module
+from user import User #importing the user class
 
 class TestUser(unittest.TestCase):
     """
@@ -23,7 +23,13 @@ class TestUser(unittest.TestCase):
         self.assertEqual(self.new_user.password,"me2017")
         self.assertEqual(self.new_user.email,"cansssidlewairim@gmail.com")
 
-    def test_save_user(self)
+    def test_save_account(self):
+        """
+        to check if the the new user is saved
+        """
+        self.new_user.save_account()#saving the new user
+        self.assertEqual(len(User.user_createaccount),1)
+        
 
 if __name__ == '__main__':
     unittest.main()
