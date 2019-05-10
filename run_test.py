@@ -43,6 +43,13 @@ class TestUser(unittest.TestCase):
         login = User("Canssidle","me2017","canssidlewairimu@gmail.com")
         login.save_account()  
 
+    def test_generate_password(self):
+        """
+        test  to check if password is being generated
+        """
+        self.new_user.generate_password()
+        self.assertEqual(self.new_user.password,"password")
+
 
     
 
