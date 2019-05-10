@@ -34,6 +34,18 @@ class TestUser(unittest.TestCase):
         self.new_user.save_account()#saving the new user
         self.assertEqual(len(User.user_createaccount),1)
 
+    def test_login(self):
+        """
+        to check if the user can login
+        """
+
+        self.new_user.save_account()
+        login = User("Canssidle","me2017","canssidlewairimu@gmail.com")
+        login.save_account()  
+
+
+    
+
 
 
         
