@@ -51,7 +51,23 @@ class TestUser(unittest.TestCase):
         self.assertEqual(self.new_user.password,"password")
 
 
-    
+    #<---Test for the credentials--->#
+    from user import credentials
+
+class TestCredentials(unittest.TestCase):
+    def setUp(self):
+
+        self.user_credentials = Credentials("Canssidle","me2017","canssidlewairimu@gmail.com")
+
+    def tearDown(self):
+        CRedentials.user_credentials = []
+
+    def test_init(self):
+        self.assertEqual(self.user_credential.account_name, "Canssidle")
+        self.assertEqual(self.user_credential.password, "me2017")
+        self.assertEqual(self.user_credential.email, "canssidlewairimu@gmail.com")
+       
+
 
 
 
