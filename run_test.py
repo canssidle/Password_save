@@ -63,7 +63,7 @@ class TestCredentials(unittest.TestCase):
         CRedentials.user_credentials = []
 
     def test_init(self):
-        self.assertEqual(self.user_credential.account_name, "Canssidle")
+        self.assertEqual(self.user_credential.usernsme, "Canssidle")
         self.assertEqual(self.user_credential.password, "me2017")
         self.assertEqual(self.user_credential.email, "canssidlewairimu@gmail.com")
        
@@ -73,28 +73,28 @@ class TestCredentials(unittest.TestCase):
 
     def test_save_multiple_credentials(self):
         self.user_credential.save_credentials()
-        test_Credentials = Credentials("account_name", "email", "password")
+        test_Credentials = Credentials("username", "password", "email")
         test_Credentials.save_credentials()
 
         self.assertEqual(len(Credentials.user_credentials), 2)
     
     def test_delete_credentials(self):
         self.user_credential.save_credentials()
-        test_Credentials = Credentials("account_name", "email", "password")
+        test_Credentials = Credentials("username", "password", "email")
         test_Credentials.save_credentials()
 
-    #     self.assertEqual(len(Credentials.user_credentials), 1)
+        self.assertEqual(len(Credentials.user_credentials), 1)
 
-    # def test_display_credentials(self):
-    #     self.assertEqual(Credentials.display_credentials(),Credentials.user_credentials)
+    def test_display_credentials(self):
+        self.assertEqual(Credentials.display_credentials(),Credentials.user_credentials)
 
-    # def test_find_account(self):
-    #     self.user_credential.save_credentials()
+    def test_find_account(self):
+        self.user_credential.save_credentials()
 
-    #     test_Credentials = Credentials("claudianjeri", "claudianjeri04@gmail.com", "claudia04" )
-    #     test_Credentials.save_credentials()
+        test_Credentials = Credentials("Canssidle", "me2017","canssidlewairimu@gmail.com" )
+        test_Credentials.save_credentials()
 
-    #     found_account = Credentials.find_by_account_name("claudianjeri")
+        found_account = Credentials.find_by_account_name("canssidle")
 
     #     self.assertEqual(found_account.email,test_Credentials.email)
 
