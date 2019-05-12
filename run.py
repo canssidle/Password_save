@@ -45,35 +45,35 @@ def welcome():
             print("select 1 or 2")
 
 
-# def main():
-#     print("Safest password locker\n")
-#     register = welcome()
-#     print(register)
-#     print("you can now proceed\n")
+def main():
+    print("Safest password locker\n")
+    register = welcome()
+    print(register)
+    print("you can now proceed\n")
 
-#     if register:
-#         login = True
-#         while login:
-#             options = int(input("1)create account\n2)view account\n3)delete account\n4)Exit\n"))
-#             if options == 1:
+    if register:
+        login = True
+        while login:
+            options = int(input("1)create account\n2)view account\n3)delete account\n4)Exit\n"))
+            if options == 1:
                 
-#                 account =input("enter account name")
+                account =input("enter account name")
 
-#                 email = input("enter email")
-#                 num = int(input("length password"))
-#                 password = actual(num)
+                email = input("enter email")
+                num = int(input("length password"))
+                password = actual(num)
 
                     
-#                 Credential(account, password, email)
-#             elif options == 2:
-#                 Credential.display_account()
-#             elif options ==3:
-#                 acc = input("which account to delete ? ")
-#                 Credential.delete(acc)
-#             elif options == 4:
-#                 login = False
+                Credential(account, password, email)
+            elif options == 2:
+                Credential.display_account()
+            elif options ==3:
+                acc = input("which account to delete ? ")
+                Credential.delete(acc)
+            elif options == 4:
+                login = False
 
 
 
-# if __name__ == '__main__':
-#     main()
+if __name__ == '__main__':
+    main()
