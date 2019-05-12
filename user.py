@@ -12,7 +12,9 @@ class User:
         self.password = password
         User.user = {"username":self.username, "email":self.email, "password":self.password}
 
-
+    def save_account(self):
+        User.user_createaccount.append(self)
+        
     @classmethod
     def return_user(cls):
         return cls.user
