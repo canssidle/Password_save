@@ -17,15 +17,15 @@ class Credential:
         print("###   account name   ##  password  ##   email  ###")
         for i in cls.credential_list:
             print(f" ### {i['account']} ## {i['password']} ## {i['email']} ###")
-    # def search_account():
-    #     pass
+    def search_account():
+        pass
 
-    # @classmethod
-    # def delete(cls, acc):
-    #     for i in cls.credential_list:
-    #         if i['account'] == acc:
-    #             print(f" you are about to delete {i['account']} account.")
-    #             cls.credential_list.remove(i)
+    @classmethod
+    def delete(cls, acc):
+        for i in cls.credential_list:
+            if i['account'] == acc:
+                print(f" you are about to delete {i['account']} account.")
+                cls.credential_list.remove(i)
 
 
     # @classmethod
