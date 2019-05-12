@@ -7,13 +7,14 @@ class User:
         """
         created insatances of the user class
         """
-
-    def save_account(self):
-        """
-        save_account saves user objects into user_create account
-        """
-        User.user_createaccount.append(self)
+        self.username = username
+        self.email = email
+        self.password = password
+        User.user = {"username":self.username, "email":self.email, "password":self.password}
 
 
+    @classmethod
+    def return_user(cls):
+        return cls.user
 
-        #Test the credentials class
+   
