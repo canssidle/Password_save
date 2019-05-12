@@ -7,17 +7,21 @@ class Credential:
         self.email = email
         Credential.credential_list.append({"username":self.username,"password":self.password, "email":self.email})
     
-    def delete_credentials(self):
-        Credentials.user_credentials.remove(self)
+    
 
+    @classmethod
+    def display_account(cls):
+        print("###   username   ##  password  ##   email  ###")
+        for i in cls.credential_list:
+            print(f" ### {i['username']} ## {i['password']} ## {i['email']} ###")
 
-    # @classmethod
-    # def display_account(cls):
-    #     print("###   username   ##  password  ##   email  ###")
-    #     for i in cls.credential_list:
-    #         print(f" ### {i['username']} ## {i['password']} ## {i['email']} ###")
-    # def search_account():
-    #     pass
+    @classmethod
+    def search_account(cls,username):
+        for i in cls.credential_list:
+            if i['username'] == username:
+                return account 
+
+        
 
     # @classmethod
     # def delete(cls, acc):
