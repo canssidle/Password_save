@@ -7,18 +7,9 @@ class Credential:
         self.email = email
         Credential.credential_list.append({"username":self.username,"password":self.password, "email":self.email})
     
+    def delete_credentials(self):
+        Credentials.user_credentials.remove(self)
 
-    
-    def generate_password():
-        '''
-        generate new password
-        '''
-        chars = '1234567890abcdefghijklmnopqrstuvwx123456789?/@-' #characters to choose from
-        length = int(input("Enter the length of password you want: "))
-        password = ''
-        for chars in range(length):
-            password += random.choice(chars) #generate random password
-        print (password)
 
     # @classmethod
     # def display_account(cls):
