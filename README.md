@@ -3,10 +3,10 @@
 ### By Canssidle
 
 ## Description 
-{This is where the user creates a new account and enters the user name, email and password.If all the conditions have been meet theuser is now able to continue and register their new accounts.If the user is not willing to continue they can exut the page}
-#### By **{List of contributors}**
-## Description
-{This is a detailed description of your application, including its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }
+{This is where the user creates a new account and enters the user name, email and password.If all the conditions have been meet theuser is now able to continue and register their new accounts.If the user is not willing to continue they can exit the page.In resitering the account the user will be required to enter their username ,email and the password length.The password_save will generate the user's password according to the length,Thos is much safer and more convinient method to secure your password from evil eyes.}
+
+## Behaviour of the application
+
 ## Setup/Installation Requirements
 * This is a great place
 * to list setup instructions
