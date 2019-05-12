@@ -28,21 +28,21 @@ def register():
         register()
 
 
-# def welcome():
-#     print("Jambo")
-#     choosing= True
-#     while choosing:
+def welcome():
+    print("Jambo")
+    choosing= True
+    while choosing:
         
-#         inp = int(input("1)Register.\n2)Exit.\n"))
+        inp = int(input("1)Register.\n2)Exit.\n"))
 
 
-#         if inp == 1:
-#            return register()
-#         elif inp == 2:
-#             sys.exit(2)
+        if inp == 1:
+           return register()
+        elif inp == 2:
+            sys.exit(2)
 
-#         else:
-#             print("select 1 or 2")
+        else:
+            print("select 1 or 2")
 
 
 # def main():
