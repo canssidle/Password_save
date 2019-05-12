@@ -19,20 +19,27 @@ class Credential:
     def search_account(cls,username):
         for i in cls.credential_list:
             if i['username'] == username:
-                return account 
+                return username 
 
         
 
-    # @classmethod
-    # def delete(cls, acc):
-    #     for i in cls.credential_list:
-    #         if i['username'] == acc:
-    #             print(f" you are about to delete {i['username']} account.")
-    #             cls.credential_list.remove(i)
+    @classmethod
+    def delete(cls, acc):
+        for i in cls.credential_list:
+            if i['username'] == acc:
+                print(f" you are about to delete {i['username']} account.")
+                cls.credential_list.remove(i)
 
 
-    # @classmethod
-    # def view(cls):
-    #     print("all your accounts")
-    #     for i in cls.credential_list:
-    #         print(f" || {i['username']} || {i['password']} || {i['email']}")
+    @classmethod
+    def view(cls):
+        print("all your accounts")
+        for i in cls.credential_list:
+            print(f" || {i['username']} || {i['password']} || {i['email']}")
+
+    @classmethod
+    def copy_credential(cls,username):
+        credential_found = Credentials.find_by_username(username)
+        pyperclip.copy(credential_found.password)
+        
+
