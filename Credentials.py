@@ -28,8 +28,8 @@ class Credential:
                 cls.credential_list.remove(i)
 
 
-    # @classmethod
-    # def view(cls):
-    #     print("all your accounts")
-    #     for i in cls.credential_list:
-    #         print(f" || {i['account']} || {i['password']} || {i['email']}")
+    @classmethod
+    def view(cls):
+        print("all your accounts")
+        for i in cls.credential_list:
+            print(f" || {i['account']} || {i['password']} || {i['email']}")
