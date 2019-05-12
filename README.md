@@ -6,21 +6,32 @@
 {This is where the user creates a new account and enters the user name, email and password.If all the conditions have been meet theuser is now able to continue and register their new accounts.If the user is not willing to continue they can exit the page.In resitering the account the user will be required to enter their username ,email and the password length.The password_save will generate the user's password according to the length,Thos is much safer and more convinient method to secure your password from evil eyes.}
 
 ## Behaviour of the application
+* The user creates a new account on the terminal
+* The user is prompted to enter his or her required details
+* According to the users input the password_save application generates a password for the user according to the length chosen by the user
 
-## Setup/Installation Requirements
-* This is a great place
-* to list setup instructions
-* in a simple
-* easy-to-understand
-* format
-{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? Do I need to install any dependencies? How should I set up my databases? Is there other code this app depends on?}
-## Known Bugs
-{Are there issues that have not yet been resolved that you want to let users know you know? Outline any issues that would impact use of your application. Share any workarounds that are in place. }
+## DEvelopment
+* There are two classes namely user and credentials to create instances of the classes
+* Tests to see the functionality of the classes
+
+## IMporting packeges used in app development
+
+* sys
+* string
+* random
+
+## Test Driven DEvelopment
+* Test done using python(unittest)
+
+##Setup/Installation Requirements
+* Git clone or visit thepython documentation.
+
+
 ## Technologies Used
-{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}
+* python
 ## Support and contact details
-{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}
+ If any complications occur email me at canssidlewairimu@gmail.com
 ### License
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
-Copyright (c) {year} **{List of contributors or company name}**
+
+* MIT Copyright (c) 2018 **Canssidle
   
